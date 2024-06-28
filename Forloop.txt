@@ -1,0 +1,11 @@
+System.out.print("Please enter the total number of members: ");
+int totalMembers = scanner.nextInt();
+
+// Create an array to hold the principal amounts for each member
+double[] deposits = new double[totalMembers];
+
+// Collect principal amounts from the user
+for (int index = 0; index < totalMembers; index++) {
+    System.out.print("Enter the principal amount for member #" + (index + 1) + ": ");
+    deposits[index] = scanner.nextDouble();
+}
